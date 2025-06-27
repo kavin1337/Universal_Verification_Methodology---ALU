@@ -52,5 +52,10 @@ module top;
     $display("clock cycle is over");
     $finish();
   end
+
+  initial begin
+    $dumpfile("d.vcd");
+    $dumpvars();
+  end
   
 endmodule: top
